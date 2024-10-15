@@ -1,0 +1,17 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar h1{
+  color: rgba(0, 255, 255, 0.836);
+  padding-left: 4vh;
+}
+
+.menu ul{
+  display: flex;
+  gap: 80px;
+}
+.navbar ul li{
+  list-style: none;
+  padding: 2vmin 2vmin;
+}
