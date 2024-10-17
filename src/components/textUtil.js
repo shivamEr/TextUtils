@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 const TextUtil = (props) => {
     const [text, setText] = useState("Enter Text here");
 
@@ -57,8 +58,8 @@ const TextUtil = (props) => {
 
             <div className="sumry" style={{ textAlign: "center", margin: "0% 20%", fontSize: "10px" }}>
                 <h2>Your Text Summary</h2>
-                <p>{text.split(" ").filter(word=> word!=="").length} Words and {text.length} Characters</p>
-                <p>{0.008 * text.split(" ").length} Minutes Read</p>
+                <p>{text.split(/\s+/).filter(word=> word!=="").length} Words and {text.length} Characters</p>
+                <p>{0.008 * text.split(/\s+/).filter(word=> word!=="").length} Minutes Read</p>
                 <h4>Preview</h4>
                 <p>{text}</p>
             </div>

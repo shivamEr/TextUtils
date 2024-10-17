@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 function Navbar(prop) {
     return (
@@ -9,10 +10,10 @@ function Navbar(prop) {
                 </div>
                 <div className={`menu text-${prop.mode === "light" ? "dark" : "light"}`}>
                     <ul>
-                        <li>{prop.home}</li>
-                        <li>{prop.about}</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                        <li><Link to="/" className={`text-${prop.mode === "light" ? "dark" : "light"}`}>{prop.home}</Link></li>
+                        <li><Link to="/about" className={`text-${prop.mode === "light" ? "dark" : "light"}`}>{prop.about}</Link></li>
+                        <li><Link to="/counter" className={`text-${prop.mode === "light" ? "dark" : "light"}`}>Counter</Link></li>
+                        <li><Link to="/contact" className={`text-${prop.mode === "light" ? "dark" : "light"}`}>Contact</Link></li>
                         <div className="form-check form-switch pt-3">
                             <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={prop.toggleMode}/>
                             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable DarkMode</label>

@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 .navbar h1{
-  color: rgba(0, 255, 255, 0.836);
+  color: rgb(0, 119, 255);
   padding-left: 4vh;
 }
 
@@ -14,4 +14,8 @@
 .navbar ul li{
   list-style: none;
   padding: 2vmin 2vmin;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
 }

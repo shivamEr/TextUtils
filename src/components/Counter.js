@@ -15,7 +15,7 @@ const Counter = () => {
     };
     return (
         <div className='counter pt-5' style={{textAlign:"center"}}>
-            <h1 style={{ color:"green", textAlign:"center" }}>Counter App</h1>
+            <h1 style={{ color:"cyan", textAlign:"center" }}>Counter App</h1>
             <h1 className='text-success'>{count}</h1>
             <button onClick={increment} className='btn btn-primary m-5'>Increment</button>
             <button onClick={decrement} className='btn btn-primary m-5' >Decrement</button>
