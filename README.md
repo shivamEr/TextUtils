@@ -44,7 +44,7 @@ To get a local copy up and running, follow these steps:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/TextUtils.git
+   git clone https://github.com/shivamer/TextUtils.git
    ```
 2. Navigate into the project directory:
    ```bash
